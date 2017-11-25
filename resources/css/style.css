@@ -102,7 +102,7 @@ nav .container {
   height: 8rem;
 }
 
-.glasses img{
+.glass img{
   height: 6rem;
 }
 
@@ -134,4 +134,80 @@ nav .container {
   color: white;
   padding: 5em 0;
   margin-top: 4em;
+}
+
+nav .mobile-nav{
+  display: none;
+}
+
+@media only screen and (max-width: 1024px) {
+  .product{
+    width: 45%;
+  }
+
+  .products .glasses{
+    display: none;
+  }
+
+  html{
+    font-size:16px;
+  }
+
+  nav .mobile-nav{
+    display: block;
+    text-align: center;
+  }
+
+  nav .desktop{
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .product{
+    width: 90%;
+    margin: auto;
+  }
+
+  .products .watches{
+    display: none;
+  }
+
+  .info{
+    flex-wrap: wrap;
+  }
+
+  .info-items{
+    width: 90%;
+    margin: auto;
+  }
+
+  .info-items p{
+    margin-bottom: 1em;
+  }
+
+  .header {
+    height: 17em;
+  }
+
+  .headline {
+    width: 100%;
+    padding: 1em 2em;
+    top: 10em;
+  }
+
+  .headline h2 {
+    font-size: .77rem;
+    padding-bottom: 0;
+  }
+
+  .headline h1 {
+    font-size: 1rem;
+    padding-top: 0;
+  }
+
+  footer{
+    text-align: center;
+  }
+
 }
